@@ -27,9 +27,7 @@
   height: auto;
   border-radius: 0.64rem;
   transform: scale(1);
-  transition: all .3s ease-in-out;
-
-
+  transition: all 0.3s ease-in-out;
 }
 .button-container {
   width: 100%;
@@ -38,7 +36,7 @@
   align-items: center;
   margin-top: -24.5px;
 }
-.btn.add-to-cart {
+.btn-add-to-cart {
   max-width: 160px;
   width: 100%;
   display: flex;
@@ -56,13 +54,10 @@
   background-color: white;
   margin-left: 2px;
   cursor: pointer;
-  transition: all .25s ease-in;
+  transition: all 0.25s ease-in;
   transform: scale(1);
-  transition: all .3s ease-in-out;
-
+  transition: all 0.3s ease-in-out;
 }
-
-
 
 .cart-icon {
   margin-left: 3px;
@@ -101,17 +96,54 @@
   margin-top: 0.5rem;
 }
 
-
 /* ACTIVE STATES */
-.btn.add-to-cart:hover{
-    border: 1px solid var(--Red);
-    color: var(--Red);
-    transform: scale(1.05);
-    transition: all .2s ease-in-out;
+.btn.add-to-cart:hover {
+  border: 1px solid var(--Red);
+  color: var(--Red);
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
 }
-.product-img:hover{
-    cursor: pointer;
-    transform: scale(1.05);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.09);
-
+.product-img:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.09);
+}
+/* CONDITIONAL STATES */
+.active-btn-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 160px;
+  width: 100%;
+  background-color: var(--Red);
+  margin: -24.5px auto 0 auto;
+  border-radius: 2.4rem;
+  height: 44px;
+  padding-top: -15px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.btn {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid var(--Rose-50);
+  padding: 3px;
+  cursor: pointer;
+  transition: all 0.25s ease-in;
+  transform: scale(1);
+  transition: all 0.3s ease-in-out;
+}
+.qty{
+    font-size: 1.6rem;
+    color: var(--Rose-50);
+    font-weight: 400;
+}
+.active-border{
+    border: 2px solid var(--Red);
 }

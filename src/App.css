@@ -56,3 +56,11 @@ p {
     padding: 5.8rem 5% ;
   }
 }
+
+/* @media (width > 1480px) {
+  .inner-container{
+    padding: 5.8rem 3% ;
+    max-width: 100%;
+    min-height: 100vh;
+  }
+} */

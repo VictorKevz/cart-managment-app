@@ -67,3 +67,27 @@
     grid-template-columns: 1fr;
   }
 }
+
+
+
+/* @media (width > 1480px) {
+    .products-wrapper,
+    .main-cart-wrapper {
+      max-width: 100%;
+      width: 100%;
+      
+    }
+    .main-cart-wrapper{
+        margin-top: 0;
+        grid-row: span 2;
+    }
+    .products-wrapper{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .shop-wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+    }
+    
+  } */
+
