@@ -1,10 +1,10 @@
 import React from "react";
-import "./cart.css";
-import empty from "../../../assets/images/illustration-empty-cart.svg";
+import "../css/cart.css";
+import empty from "../assets/images/illustration-empty-cart.svg";
 
 function Cart() {
   return (
-    <div className="main-cart-wrapper">
+    <div className="cart-wrapper">
       <article className="empty-cart-container">
         <h2 className="empty-cart-title">Your Cart(0)</h2>
 
