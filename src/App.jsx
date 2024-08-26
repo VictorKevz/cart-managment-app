@@ -21,6 +21,20 @@ function App() {
     });
   };
 
+  const decrementQty = (currentID) => {
+    setSelectedProducts((prevProducts) => {
+      return prevProducts
+        .map((p) =>
+          p.id === currentID ? { ...p, quantity: p.quantity - 1 } : p
+        )
+        .filter((p) => p.quantity > 0);
+    });
+  };
+  const deleteFromCart = (currentID) => {
+    setSelectedProducts((prevProducts) => {
+      return prevProducts.filter((product)=> product.id !== currentID)
+    });
+  };
   return (
     <main className="outer-container">
       <div className="inner-container">
@@ -28,8 +42,9 @@ function App() {
           onSelect={selectProducts}
           selectedProducts={selectedProducts}
           onIncrement={incrementQty}
+          onDecrement={decrementQty}
         />
-        <Cart />
+        <Cart selectedProducts={selectedProducts} onDelete={deleteFromCart} />
       </div>
     </main>
   );

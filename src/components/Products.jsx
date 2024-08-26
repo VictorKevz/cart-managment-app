@@ -5,7 +5,9 @@ import decreaseIcon from "../assets/images/icon-decrement-quantity.svg";
 import cartIcon from "../assets/images/icon-add-to-cart.svg";
 import increaseIcon from "../assets/images/icon-increment-quantity.svg";
 
-function Products({ onSelect, selectedProducts,onIncrement }) {
+function Products({ onSelect, selectedProducts,onIncrement,onDecrement }) {
+
+  //See which product is selected and style
   const isSelected = (currentID) => {
     return selectedProducts.some((p) =>  p.id === currentID);
   };
@@ -53,7 +55,7 @@ function Products({ onSelect, selectedProducts,onIncrement }) {
               >
                 {quantity > 0 ? (
                   <div className="active-btn-wrapper">
-                    <button type="button" className="qty-btn">
+                    <button type="button" className="qty-btn" onClick={()=>onDecrement(product.id)}>
                       <img
                         src={decreaseIcon}
                         alt="Decrement Icon"

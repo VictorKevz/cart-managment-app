@@ -20,6 +20,7 @@
   color: var(--Rose-900);
   font-weight: 700;
   margin-left: 1px;
+  margin-bottom:2.5rem ;
 }
 .products-container {
   width: 100%;
@@ -137,17 +138,8 @@ border-radius: 2.8rem;
 }
 
 /* ACTIVE STATES */
-.btn.add-to-cart:hover {
-  border: 1px solid var(--Red);
-  color: var(--Red);
-  transform: scale(1.05);
-  transition: all 0.2s ease-in-out;
-}
-.product-img:hover {
-  cursor: pointer;
-  transform: scale(1.05);
-  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.09);
-}
+
+
 /* CONDITIONAL STATES */
 
 
