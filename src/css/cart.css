@@ -109,7 +109,7 @@
   border: 1px solid var(--Rose-400);
   border-radius: 50%;
 }
-.total-cost-wrapper,.carbon-wrapper,.confirm-order-btn {
+.total-cost-wrapper,.carbon-wrapper,.btn {
   margin-top: 1.8rem;
   width: 100%;
   display: flex;
@@ -120,38 +120,23 @@
   font-weight: 700;
   font-size: 2.8rem;
 }
-.carbon-wrapper,.confirm-order-btn{
+.carbon-wrapper,.btn{
   justify-content: center;
   gap: .5rem;
   height: 5.2rem;
   background-color: var(--Rose-100);
   border-radius: .64rem;
+  padding: 0 .5rem;
 }
-.confirm-order-btn{
+.btn{
 background-color: var(--Red);
 color: var(--Rose-50);
 border-radius: 2.8rem;
 font-weight: 600;
 font-size: 1.6rem;
 }
-@media (width <= 1150px) {
-  .products-wrapper {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .shop-wrapper {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .main-cart-wrapper {
-    margin-top: 3rem;
-    max-width: 100%;
-    margin-top: 5rem;
-    box-shadow: 0 1rem 2rem rgba(245, 160, 3, 0.054);
-  }
+.carbon-text{
+  font-size: clamp(1rem,10vw,1.4rem);
 }
-@media (width <= 749px) {
-  .products-wrapper {
-    grid-template-columns: 1fr;
-  }
-}
+
+

@@ -15,6 +15,7 @@ p {
   position: relative;
   width: 100%;
   background-color: var(--Rose-50);
+  padding: 0 2.4rem;
 }
 .inner-container {
   display: flex;
@@ -26,9 +27,5 @@ p {
   height: fit-content;
 }
 
-@media (width <= 1300px) {
-  .inner-container{
-    padding: 5.8rem 5% ;
-  }
-}
+
 

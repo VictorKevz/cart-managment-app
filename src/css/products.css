@@ -40,8 +40,7 @@
 
 .product-image-wrapper {
   width: 100%;
-  height: auto;
-  border-radius: 0.64rem;
+  height: fit-content;
   transition: all 0.3s ease-in-out;
 }
 .product-image-wrapper.active{
@@ -121,7 +120,7 @@ border-radius: 2.8rem;
 .product-category {
   font-size: 1.45rem;
   font-weight: 300;
-  color: var(--Rose-400);
+  color: var(--Rose-500);
 }
 
 .product-name {

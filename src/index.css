@@ -26,3 +26,32 @@ body {
   height: 100%;
 
 }
+@media (width <= 1160px) {
+  .inner-container{
+    padding: 3rem 2.2rem;
+  }
+  .products-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0;
+    row-gap: 0;
+    gap: 2rem;
+
+  }  
+}
+@media (width <= 960px) {
+.inner-container{
+  flex-direction: column;
+}
+.products-wrapper{
+ margin: 0 auto;
+}
+}
+@media (width <= 560px) {
+  .products-container{
+    grid-template-columns: 1fr;
+  }
+  .cart-wrapper {
+    align-self: center;
+    max-width: 100%;
+  }
+}
